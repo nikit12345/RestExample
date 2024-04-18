@@ -80,6 +80,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>rest-example</finalName>
 	</build>
 
 </project>
