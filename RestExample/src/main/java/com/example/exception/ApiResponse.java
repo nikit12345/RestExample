@@ -9,13 +9,21 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+
 @Builder
 public class ApiResponse {
 	
 	private String message;
 	private boolean sucess;
 	private HttpStatus status;
+	public ApiResponse(String message, boolean sucess, HttpStatus status) {
+		super();
+		this.message = message;
+		this.sucess = sucess;
+		this.status = status;
+	}
+	
+	
 
 	
 
